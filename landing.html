@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
     <!--My css-->
     <link rel="stylesheet" href="index.css">
-    <script>console.log("hello");</script>
+    <script src="index.js"></script>
 </head>
 
 <body>
@@ -27,7 +27,7 @@
     <nav class="navbar navbar-expand-md navbar-dark sticky-top">
         <div class="container-fluid">
             <a class="navbar-brand animate__animated animate__fadeInRight" href="#">
-                <h2>Abdias Baldiviezo</h2>
+                <img src="logo.png" height="50px">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
                 <span class="navbar-toggler-icon"></span>
@@ -55,232 +55,290 @@
                         <a class="nav-link" href="articles.html">Articles</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link animate__animated animate__fadeInUp" href="contact.html">Contact</a>
+                        <a class="nav-link animate__animated animate__fadeInUp" href="#footer">Contact</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
-
-    <!--Welcome-->
-    <div class="row container-fluid">
-        <!--Bubbles-->
-        <div class="container-fluid col-lg-4 col-md-4 animate__animated animate__fadeInUp">
-            <div class="row container-fluid">
-                <div class="speech-bubble">
-                    <p class="lead">Aspiring to become an AI/Machine Learning Engineer</p>
-                </div>
-            </div>
-            <div class="row container-fluid">
-                <div class="speech-bubble">
-                    <p class="lead">Software Engineer based in Salt Lake City, UT</p>
-                </div>
-            </div>
-            <div class="row container-fluid">
-                <div class="speech-bubble">
-                    <p class="lead">Born and Raised in La Paz-Bolivia, with affinity towards Arts, Music, and Technology
-                    </p>
-                </div>
-            </div>
-            <div class="row container-fluid">
-                <a href="ABaldiviezoResume.pdf" class="btn btn-primary mx-auto" target="_blank"> My Resume</a>
-            </div>
-        </div>
-
-        <!--Carousel-->
-        <div id="slides" class="carousel slide col-lg-4 col-md-4" data-ride="carousel">
-            <ul class="carousel-indicators">
-                <li data-target="#slides" data-slide-to="0" class="active"></li>
-                <li data-target="#slides" data-slide-to="1"></li>
-                <li data-target="#slides" data-slide-to="2"></li>
-            </ul>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img class="img-fluid rounded-circle" src="profile.jpg" alt="me">
-                </div>
-                <div class="carousel-item">
-                    <img class="img-fluid rounded-circle" src="boy.PNG" alt="drawing">
-                </div>
-                <div class="carousel-item">
-                    <img class="img-fluid rounded-circle" src="illimani.jpg" alt="Illimani-La Paz">
-                </div>
-            </div>
-            <a class="carousel-control-prev" href="#slides" data-slide="prev">
-                <span class="carousel-control-prev-icon"></span>
-            </a>
-            <a class="carousel-control-next" href="#slides" data-slide="next">
-                <span class="carousel-control-next-icon"></span>
-            </a>
-
-        </div>
-        <!--Welcome Section-->
-        <div id="welcome" class="container-fluid padding col-lg-3 col-md-3">
-            <h1 class="display-4">Software...</h1>
-            <hr>
-            <h1 class="display-4 animate__animated animate__fadeInUp animate__delay-2s">Engineer</h1>
-            <hr>
-            <h1 class="display-4 animate__animated animate__fadeInUp animate__delay-3s">Developer</h1>
-            <hr>
-            <h1 class="display-4 animate__animated animate__fadeInUp animate__delay-4s">Creator</h1>
-            <hr>
-            <div class="container-fluid social animate__animated animate__fadeInUp">
-                <a href="https://github.com/abadias618"><i class="fab fa-github"></i></a>
-                <a href="mailto: abadias@byui.edu"><i class="fas fa-envelope"></i></a>
-                <a href="https://www.linkedin.com/in/albertobaldiviezo/"><i class="fab fa-linkedin"></i></a>
-            </div>
-        </div>
-    </div>
     <br>
     <br>
-    <!--Jumbotron-->
-    <div class="jumbotron col-12">
-        <p class="lead">"By small and simple things are great things brought to pass..." (Alma)</p>
+    <div class="container-fluid col-10 ">
+        <div class="row container-fluid">
+            <div class="col-lg-8 col-sm-12">
+                <div class="typewriter">
+                    <h3 style="color: rgb(14, 133, 133);">#include &ltportfolio.h&gt</h3>
+                    <h3 style="color: rgb(14, 133, 133);">#include &ltiostream&gt</h3>
+                    <h3 style="color: purple;">using namespace std;</h3>
+                    <h3><span style="color: #0F3B73;">int </span><span>main() {</span></h3>
+                    <h1>&nbspcout &lt&lt I'm Abdias</h1>
+                    <h1>&nbsp&nbsp &lt&lt Baldiviezo;</h1>
+                    <h3>&nbsp &nbsp<span style="color: #0F3B73;">return </span><span>0;</span></h3>
+                    <h3>}</h3>
+                </div>
+            </div>
+            <!--Welcome Section-->
+            <div id="welcome" class="container-fluid padding col-lg-4 col-sm-12">
+                <h1 class="display-4">Software...</h1>
+                <hr>
+                <h1 class="display-4 animate__animated animate__fadeInUp animate__delay-2s">Engineer</h1>
+                <hr>
+                <h1 class="display-4 animate__animated animate__fadeInUp animate__delay-3s">Developer</h1>
+                <hr>
+                <h1 class="display-4 animate__animated animate__fadeInUp animate__delay-4s">Creator</h1>
+                <hr>
+            </div>
+            <!--About-->
+            <div id="main" class="row container-fluid mx-auto">
+                <!--Bubbles-->
+                <div id="bubbles" class="container-fluid col-lg-4 col-md-6">
+                    <div class="row container-fluid">
+                        <div class="speech-bubble">
+                            <p class="lead">Aspiring to become an AI/Machine Learning Engineer</p>
+                        </div>
+                    </div>
+                    <div class="row container-fluid">
+                        <div class="speech-bubble">
+                            <p class="lead">Software Engineer based in Salt Lake City, UT</p>
+                        </div>
+                    </div>
+                    <div class="row container-fluid">
+                        <div class="speech-bubble">
+                            <p class="lead">Born and Raised in La Paz-Bolivia, with affinity towards Arts, Music, and
+                                Technology
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row container-fluid">
+                        <a href="ABaldiviezoResume.pdf" class="btn btn-primary mx-auto" target="_blank"> My Resume</a>
+                    </div>
+                </div>
+
+                <!--Carousel-->
+                <div id="slides" class="carousel slide col-lg-4 col-md-6" data-ride="carousel">
+                    <ul class="carousel-indicators">
+                        <li data-target="#slides" data-slide-to="0" class="active"></li>
+                        <li data-target="#slides" data-slide-to="1"></li>
+                        <li data-target="#slides" data-slide-to="2"></li>
+                    </ul>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="img-fluid rounded-circle" src="profile.jpg" alt="me">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="img-fluid rounded-circle" src="boy.PNG" alt="drawing">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="img-fluid rounded-circle" src="illimani.jpg" alt="Illimani-La Paz">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#slides" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#slides" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
+
+                </div>
+
+                <!--Social media icons-->
+                <div id="social-col">
+                    <div class="row container-fluid social animate__animated animate__fadeInUp">
+                        <a href="#"><i class="fas fa-arrow-circle-up"></i></a>
+                    </div>
+                    <br>
+                    <br>
+                    <div class="row container-fluid social animate__animated animate__fadeInUp">
+                        <a href="https://github.com/abadias618"><i class="fab fa-github"></i></a>
+                    </div>
+                    <div class="row container-fluid social animate__animated animate__fadeInUp">
+                        <a href="mailto: abadias@byui.edu"><i class="fas fa-envelope"></i></a>
+                    </div>
+                    <div class="row container-fluid social animate__animated animate__fadeInUp">
+                        <a href="https://www.linkedin.com/in/albertobaldiviezo/"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <br>
+        <br>
+        <!--Jumbotron-->
+        <div class="jumbotron col-12">
+            <p class="lead">"By small and simple things are great things brought to pass..." (Alma)</p>
+            <hr>
+            <h4 class="text">
+                I love to build, make, and craft software.<br>
+                I have done many different things throughout this ongoing learning process,
+                some of them are: web development, android applications, algorithm studies,
+                machine learning, computer vision, data science, and more.
+            </h4>
+        </div>
+        <br>
+        <br>
+        <!--Three Column Section-->
+        <div class="container-fluid padding">
+            <div class="row text-center padding">
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <i class="fas fa-pencil-alt"></i>
+                    <h3>Education</h3>
+                    <a href="https://www.ldsbc.edu/">LDS Business College</a>
+                    <p>AAS Software Development</p>
+                    <a href="https://www.byui.edu/">Brigham Young University - Idaho</a>
+                    <p>BS Software Engineering</p>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <i class="fas fa-archway"></i>
+                    <h3>Experience</h3>
+                    <a
+                        href="https://www.google.com/maps/dir/43.810816,-111.788032/Lowell+G.+Biddulph+Building,+525+S+Center+St,+Rexburg,+ID+83460/@43.8142691,-111.7910278,16z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x53540b011b767fab:0x428b2d1e7390b39c!2m2!1d-111.7852197!2d43.8170801">BYU-Idaho
+                        Business Solutions</a>
+                    <p>Maintanance and Production of Software, Data Analytics, Reports Processing</p>
+                    <a href="https://www.ldsbc.edu/bookstore">LDSBC Bookstore</a>
+                    <p>Financial Data Processing, Customer Service</p>
+                </div>
+                <div class="col-sm-12 col-md-4">
+                    <i class="fas fa-paint-brush"></i>
+                    <h3>Skills</h3>
+                    <p>Java, Javascript, Python, C++, R, PHP, Git</p>
+                    <br>
+                    <p>Node.js, Maven, Gradle, JUnit, Linux(RHEL), Bootstrap, HTML-CSS-SASS, MSSQL-PostegreSQL</p>
+                </div>
+            </div>
+            <hr class="my-4">
+        </div>
+        <br>
+        <br>
+        <!--Another subtitle-->
+        <div class="container-fluid padding">
+            <div class="row welcome text-center">
+                <div class="col-12">
+                    <h1 class="display-4">Example Projects</h1>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
         <hr>
-        <h4 class="text">
-            I love to build, make , craft software.<br>
-            I have done many different things throughout this ongoing learning process,
-            some of them are: web development, android applications, algorithm studies, 
-            machine learning, computer vision, data science, and more.
-        </h4>
-    </div>
-    <br>
-    <br>
-    <!--Three Column Section-->
-    <div class="container-fluid padding">
-        <div class="row text-center padding">
-            <div class="col-xs-12 col-sm-6 col-md-4">
-                <i class="fas fa-pencil-alt"></i>
-                <h3>Education</h3>
-                <a href="https://www.ldsbc.edu/">LDS Business College</a>
-                <p>AAS Software Development</p>
-                <a href="https://www.byui.edu/">Brigham Young University - Idaho</a>
-                <p>BS Software Engineering</p>
+        <br>
+        <!--Card Style-->
+        <div class="container-fluid padding">
+            <div class="card-deck">
+                <div class="row card-row">
+                    <div class="card">
+                        <img class="card-img-top" src="cholita.PNG">
+                        <div class="card-body">
+                            <h4 class="card-title">Number of Fingers Recognition</h4>
+                            <p class="card-text">Count the number of fingers you are holding up and
+                                perform basic OS commands based upon that (Python-OpenCV-Numpy...)
+                            </p>
+                            <div class="card-footer">
+                                <a href="#" class="btn btn-outline-secondary">View</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top" src="Jesus.PNG">
+                        <div class="card-body">
+                            <h4 class="card-title">Jesus</h4>
+                            <p class="card-text">Count the number of fingers you are holding up and
+                                perform basic OS commands based upon that (Python-OpenCV-Numpy...)
+                            </p>
+                            <div class="card-footer">
+                                <a href="#" class="btn btn-outline-secondary">View</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top" src="cryingboy.PNG">
+                        <div class="card-body">
+                            <h4 class="card-title">Others</h4>
+                            <p class="card-text">Count the number of fingers you are holding up and
+                                perform basic OS commands based upon that (Python-OpenCV-Numpy...)
+                            </p>
+                            <div class="card-footer">
+                                <a href="#" class="btn btn-outline-secondary">View</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row card-row">
+                    <div class="card">
+                        <img class="card-img-top" src="cholita.PNG">
+                        <div class="card-body">
+                            <h4 class="card-title">Number of Fingers Recognition</h4>
+                            <p class="card-text">Count the number of fingers you are holding up and
+                                perform basic OS commands based upon that (Python-OpenCV-Numpy...)
+                            </p>
+                            <div class="card-footer">
+                                <a href="#" class="btn btn-outline-secondary">View</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top" src="cholita.PNG">
+                        <div class="card-body">
+                            <h4 class="card-title">Number of Fingers Recognition</h4>
+                            <p class="card-text">Count the number of fingers you are holding up and
+                                perform basic OS commands based upon that (Python-OpenCV-Numpy...)
+                            </p>
+                            <div class="card-footer">
+                                <a href="#" class="btn btn-outline-secondary">View</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top" src="cholita.PNG">
+                        <div class="card-body">
+                            <h4 class="card-title">Number of Fingers Recognition</h4>
+                            <p class="card-text">Count the number of fingers you are holding up and
+                                perform basic OS commands based upon that (Python-OpenCV-Numpy...)
+                            </p>
+                            <div class="card-footer">
+                                <a href="#" class="btn btn-outline-secondary">View</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="col-xs-12 col-sm-6 col-md-4">
-                <i class="fas fa-archway"></i>
-                <h3>Experience</h3>
-                <a href="https://www.google.com/maps/dir/43.810816,-111.788032/Lowell+G.+Biddulph+Building,+525+S+Center+St,+Rexburg,+ID+83460/@43.8142691,-111.7910278,16z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x53540b011b767fab:0x428b2d1e7390b39c!2m2!1d-111.7852197!2d43.8170801">BYU-Idaho Business Solutions</a>
-                <p>Maintanance and Production of Software, Data Analytics, Reports Processing</p>
-                <a href="https://www.ldsbc.edu/bookstore">LDSBC Bookstore</a>
-                <p>Financial Data Processing, Customer Service</p>     
-            </div>
-            <div class="col-sm-12 col-md-4">
-                <i class="fas fa-paint-brush"></i>
-                <h3>Skills</h3>
-                <p>Java, Javascript, Python, C++, R, PHP, Git</p>
-                <br>
-                <p>Node.js, Maven, Gradle, JUnit, Linux(RHEL), Bootstrap, HTML-CSS-SASS, MSSQL-PostegreSQL</p>
+            <hr class="my-4">
+        </div>
+        <!--Two column section-->
+        <div class="container-fluid padding">
+            <div class="row padding">
+                <div class="col-12">
+                    <img id="gif" src="https://media.giphy.com/media/xT9IgzoKnwFNmISR8I/giphy.gif" width="100%" alt="gif">
+                    <div class="gif-text lead">
+                        Let's keep in touch, send me an email or a message, I'm open to Projects,
+                        Job Opportunities, or just to talk about Tech!
+                    </div>
+                </div>
             </div>
         </div>
         <hr class="my-4">
     </div>
-    <br>
-    <br>
-    <!--Another subtitle-->
-    <div class="container-fluid padding">
-        <div class="row welcome text-center">
-            <div class="col-12">
-                <h1 class="display-4">Example Projects</h1>
-            </div>
-        </div>
-    </div>
-    <hr>
-    <br>
-    <!--Card Style-->
-    <div class="container-fluid padding">
-        <div class="row padding">
-            <div class="col-md-4">
-                <div class="card">
-                    <img class="card-img-top" src="cholita.PNG">
-                    <div class="card-body">
-                        <h4 class="card-title">Number of Fingers Recognition</h4>
-                        <p class="card-text">Count the number of fingers you are holding up and
-                            perform basic OS commands based upon that (Python-OpenCV-Numpy...)
-                        </p>
-                        <a href="#" class="btn btn-outline-secondary">View</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <img class="car-img-top" src="Jesus.PNG">
-                    <div class="card-body">
-                        <h4 class="card-title">Jesus</h4>
-                        <p class="card-text"></p>
-                        <a href="#" class="btn btn-outline-secondary">View</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <img class="car-img-top" src="cryingboy.PNG">
-                    <div class="card-body">
-                        <h4 class="card-title">Others</h4>
-                        <p class="card-text"></p>
-                        <a href="#" class="btn btn-outline-secondary">View</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <hr class="my-4">
-    </div>
-    <!--Two column section-->
-    <div class="container-fluid padding">
-        <div class="row padding">
-            <div class="col-lg-6">
-                <h2>Where did all start?</h2>
-                <p>As a child I was inteoduced to a comic book artist with great works that potrayed the culture and
-                    folklore of Bolivia.</p>
-                <p>Alvaro Ruilova famous comic book artis in Bolivia Still inspires my work and my style of expressing
-                    art.</p>
-                <br>
-                <a href="#" class="btn btn-primary"> Alvaro Ruilova</a>
-
-                <img src="http://1.bp.blogspot.com/-2DpeCU5JCtc/VYOnAqgGG5I/AAAAAAAAE1c/wCyTa2chb2Q/s320/zombies_0004.jpg"
-                    class="img-fluid">
-
-            </div>
-            <div class="col-lg-6">
-                <img src="alvaro-ruilova.jpg" class="img-fluid">
-            </div>
-        </div>
-    </div>
-    <hr class="my-4">
-    
-    <!--Bottom links-->
-    <div class="container-fluid padding">
-        <div class="row text-center padding">
-            <div class="col-12">
-                <h2> Links</h2>
-            </div>
-            <div class="col-12 social padding">
-                <a href="#"><i class="fab fa-facebook"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-whatsapp"></i></a>
-            </div>
-        </div>
+    <!--empty space on the side-->
+    <div id="empty" class="container-fluid col-lg-1 col-md-1 col-sm-0">
+        &nbsp;
     </div>
     <!--bottom info-->
     <footer>
-        <div class="container-fluid padding">
+        <div id="footer" class="container-fluid padding">
             <div class="row text-center">
                 <div class="col-md-4">
-                    <img src="namelogo.PNG" height="30" width="90">
+                    <img src="logo.png" height="100px">
                     <hr class="light">
-                    <p>000-000-0000</p>
-                    <p>Email: notanactualemail@gmail.com</p>
                 </div>
                 <div class="col-md-4">
-                    <h5>Address:</h5>
+                    <h5>Email:</h5>
                     <hr class="light">
-                    <p>123 State St. </p>
-                    <p>Salt Lake City, Utah</p>
+                    <p><a href="mailto: abadias@byui.edu">abadias@byui.edu</a></p>
+                    <p><a href="mailto: abadias618@gmail.com.edu">abadias618@gmail.com</a></p>
                 </div>
                 <div class="col-md-4">
-                    <h5>Second Address:</h5>
+                    <h5>Phone:</h5>
                     <hr class="light">
-                    <p>1232 North Temple</p>
-                    <p>Salt Lake City, Utah</p>
+                    <p>+1-385-881-8766</p>
                 </div>
 
             </div>
