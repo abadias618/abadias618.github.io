@@ -3,39 +3,45 @@ html, body {
   color: white;
   font-family: sans-serif,  Poppins;
   font-weight: 300;
-  background: linear-gradient(270deg, #172242, #20304D, #283D5A);
-  background-size: 600% 600%;
-
-  -webkit-animation: backG 10s ease infinite;
-  -moz-animation: backG 10s ease infinite;
-  -o-animation: backG 10s ease infinite;
-  animation: backG 10s ease infinite;
-}
-@-webkit-keyframes backG {
-  0%{background-position:0% 50%}
-  50%{background-position:100% 50%}
-  100%{background-position:0% 50%}
-}
-@-moz-keyframes backG {
-  0%{background-position:0% 50%}
-  50%{background-position:100% 50%}
-  100%{background-position:0% 50%}
-}
-@-o-keyframes backG {
-  0%{background-position:0% 50%}
-  50%{background-position:100% 50%}
-  100%{background-position:0% 50%}
-}
-@keyframes backG {
-  0%{background-position:0% 50%}
-  50%{background-position:100% 50%}
-  100%{background-position:0% 50%}
+  background: #100a1c;
+  background-image:
+  radial-gradient(50% 30% ellipse at center top, #201e40 0%, rgba(0,0,0,0) 100%),
+  radial-gradient(60% 50% ellipse at center bottom, #261226 0%, #100a1c 100%);
+  background-attachment: fixed;
 }
 
 .navbar {
-  background-color: rgb(0,0,0,0.3);
+  background-color: transparent;
+  transition: 0.4s;
+  height: 6rem;
 }
-/* DEMO-SPECIFIC STYLES */
+.nav-link, .navbar-toggler-icon {
+  color: white;
+}
+@keyframes bounce {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  10% {
+    transform: scale(1);
+  }
+}
+.progress {
+  overflow: visible;
+  border-radius: 0 !important;
+  position: fixed;
+  width: 12px;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  background: rgba(0,0,0,0.3);
+  padding: 0 2px;
+}
+
+
 .typewriter h1 {
   color: #fff;
   font-family: monospace;
@@ -191,6 +197,7 @@ footer{
   background-color: black;
   color: antiquewhite;
   padding-top: 2rem;
+  z-index: -10;
 }
 
 
