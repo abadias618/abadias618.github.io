@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+/*===============BACKGROUND AND GENERAL TEXT COLOR AND FONT=================*/
 html, body {
   color: white;
   font-family: sans-serif,  Poppins;
@@ -10,6 +11,26 @@ html, body {
   background-attachment: fixed;
 }
 
+/*===============GENERAL SECTIONS=================*/
+#main {
+  padding-top: 10rem;
+}
+.jumbotron {
+  padding: 5%;
+  background-color: rgb(0,0,0,0.3);
+  
+}
+.lead, .text {
+  text-align: center;
+  margin: 0;
+}
+#welcome {
+  margin-right: 0;
+  position: sticky;
+  top: 5rem;
+}
+
+/*===============NAV BAR=================*/
 .navbar {
   background-color: transparent;
   transition: 0.4s;
@@ -18,6 +39,11 @@ html, body {
 .nav-link, .navbar-toggler-icon {
   color: white;
 }
+.nav-link{
+  font-size: 1.1em !important;
+}
+
+/*===============PROGRESS SCROLL BAR=================*/
 @keyframes bounce {
   0% {
     transform: scale(1);
@@ -41,7 +67,7 @@ html, body {
   padding: 0 2px;
 }
 
-
+/*===============TYPEWRITER EFFECT AND TEXT=================*/
 .typewriter h1 {
   color: #fff;
   font-family: monospace;
@@ -78,12 +104,13 @@ html, body {
   from { width: 0 }
   to { width: 100% }
 }
-
 /* The typewriter cursor effect */
 @keyframes blink-caret {
   from, to { border-color: transparent }
   50% { border-color: orange }
 }
+
+/*===============GIF IMAGE=================*/
 #gif {
   -webkit-filter: blur(5px);
   filter: blur(5px);
@@ -96,15 +123,11 @@ html, body {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-#main {
-  padding-top: 10rem;
-}
+
+/*===============DIALOG BUBBLES=================*/
 #bubbles {
   margin: 0 !important;
   visibility: hidden; /*javascript will change this when the item becomes visible*/
-}
-#slides {
-  margin: 0 !important;
 }
 .speech-bubble {
 	position: relative;
@@ -115,7 +138,6 @@ html, body {
   width: 95%;
   color: #172242;
 }
-
 .speech-bubble:after {
 	content: '';
 	position: absolute;
@@ -131,24 +153,17 @@ html, body {
   margin-right: -39px;
 }
 
-.nav-link{
-  font-size: 1.1em !important;
-}
+/*===============CAROUSEL=================*/
 .img-fluid {
   width: 100%;
 }
 .carousel {
   padding-top: 15px;
 }
-.jumbotron {
-  padding: 5%;
-  background-color: rgb(0,0,0,0.3);
-  
+#slides {
+  margin: 0 !important;
 }
-.lead, .text {
-  text-align: center;
-  margin: 0;
-}
+/*===============BUTTONS=================*/
 .btn-primary{
   background-color: #000;
   border: 2px solid #ffffff;
@@ -157,11 +172,8 @@ html, body {
   background-color: #424242;
   border: 2px solid #000;
 }
-#welcome {
-  margin-right: 0;
-  position: sticky;
-  top: 5rem;
-}
+
+/*===============SOCIAL MEDIA ICONS=================*/
 #social-col {
   margin: 0;
   padding: 0;
@@ -172,6 +184,8 @@ html, body {
   font-size: 3rem;
   padding: 0;
 }
+
+/*===============CARD=================*/
 .card-row {
   padding-top: 2rem;
 }
@@ -193,6 +207,25 @@ html, body {
   color: black;
   font-size: small;
 }
+.transparent-card {
+  background-color: transparent;
+}
+/*===============MODAL=================*/
+.modal-title {
+  color: #007BFF
+}
+.modal-body {
+  color: #172242;
+  text-align: center;
+}
+.modal-body img {
+  display: block;
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*===============FOOTER=================*/
 footer{
   background-color: black;
   color: antiquewhite;

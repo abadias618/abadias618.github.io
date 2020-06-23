@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AbdiasB.- Software Engineer</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <!--fontawsome for social media icons using svg-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+    <!--Animante.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
+    <!--My css-->
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+</head>
+
+<body>
+    <!--top menu-->
+    <nav class="navbar navbar-expand-md navbar-dark sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand animate__animated animate__fadeInRight" href="landing.html">
+                <img src="images/logo.png" height="50px">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active animate__animated animate__fadeInUp">
+                        <a class="nav-link" href="landing.html">&ltHome/&gt</a>
+                    </li>
+                    <li class="nav-item dropdown animate__animated animate__fadeInUp">
+                        <a class="nav-link dropdown-toggle" href="skills.html" id="navbardrop" data-toggle="dropdown">
+                            &ltSkills & Projects/&gt
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="java.html">Java</a>
+                            <a class="dropdown-item" href="python.html">Python</a>
+                            <a class="dropdown-item" href="cplusplus.html">C++</a>
+                            <a class="dropdown-item" href="javascript.html">Javascript/Node.js</a>
+                            <a class="dropdown-item" href="bootstrap.html">Bootstrap</a>
+                            <a class="dropdown-item" href="r.html">R</a>
+                            <a class="dropdown-item" href="php.html">PHP</a>
+                            <a class="dropdown-item" href="other.html">Other</a>
+                        </div>
+                    </li>
+                    <li class="nav-item animate__animated animate__fadeInUp">
+                        <a class="nav-link" href="articles.html">&ltArticles/&gt</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link animate__animated animate__fadeInUp" href="#footer">&ltContact/&gt</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <br>
+    <br>
+    <!--Scroll Bar-->
+    <div class="progress"></div>
+    <div class="container-fluid col-10 ">
+        <div class="row container-fluid">
+            <!--gif bg-->
+            <div class="container-fluid padding">
+                <div class="row padding">
+                    <div class="col-12">
+                        <img id="gif" src="https://media.giphy.com/media/xT9IgzoKnwFNmISR8I/giphy.gif" width="100%"
+                            alt="gif">
+                        <div class="gif-text lead display-1">
+                            Python
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4">
+            
+            <!--Social media icons-->
+            <div id="social-col">
+                <div class="row container-fluid social animate__animated animate__fadeInUp">
+                    <a href="#"><i class="fas fa-arrow-circle-up"></i></a>
+                </div>
+                <br>
+                <br>
+                <div class="row container-fluid social animate__animated animate__fadeInUp">
+                    <a href="https://github.com/abadias618"><i class="fab fa-github"></i></a>
+                </div>
+                <div class="row container-fluid social animate__animated animate__fadeInUp">
+                    <a href="mailto: abadias@byui.edu"><i class="fas fa-envelope"></i></a>
+                </div>
+                <div class="row container-fluid social animate__animated animate__fadeInUp">
+                    <a href="https://www.linkedin.com/in/albertobaldiviezo/"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+            <!--Card Style-->
+            <div class="container-fluid padding">
+                <div class="card-deck">
+                    <div class="row card-row">
+                        <!--OPENCV CARD-->
+                        <div class="card">
+                            <img class="card-img-top" src="images/openCV_2.png">
+                            <div class="card-body">
+                                <h4 class="card-title">Number of Fingers Recognition</h4>
+                                <p class="card-text">
+                                    Count the number of fingers you are holding up and
+                                    perform basic OS commands based upon that (Python-OpenCV-Numpy...)
+                                </p>
+                                <div class="card-footer">
+                                    <!--Code button-->
+                                    <a href="https://github.com/abadias618/HandCommandRecognition"
+                                        class="btn btn-outline-primary">Code</a>
+
+                                    <!-- Button trigger modal -->
+                                    <button type="button" class="btn btn-outline-secondary" data-toggle="modal"
+                                        data-target="#python1">
+                                        Details
+                                    </button>
+
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="python1" tabindex="-1" role="dialog"
+                                        aria-labelledby="python1ModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog modal-xl" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="python1ModalLabel">Number of Fingers Recognition</h5>
+                                                    <button type="button" class="close" data-dismiss="modal"
+                                                        aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <p>
+                                                        Through convex hull find number of contours (most extreme region)
+                                                        to calculate the number of fingers of a segmented region (AOI) taken
+                                                        from the total input of the camera
+                                                    </p>
+                                                    <br>
+                                                    <img src="images/openCV_1.png">
+                                                    <br>
+                                                    <p>
+                                                        Wait about 5 seconds to calibrate, leave the AOI empty,
+                                                        then put your hand inside the AOI
+                                                    </p>
+                                                    <br>
+                                                    <img src="images/openCV_2.png">
+                                                    <br>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary"
+                                                        data-dismiss="modal">Close</button>
+                                                    <a href="mailto: abadias618@gmail.com" 
+                                                        class="btn btn-primary">Ask me a question</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--END OPENCV CARD-->
+                        <!--ID3 CARD-->
+                        <div class="card">
+                            <img class="card-img-top" src="images/decision_trees.png">
+                            <div class="card-body">
+                                <h4 class="card-title">Decision Trees - ID3 Algorithm</h4>
+                                <p class="card-text">Recursive implementation of the ID3
+                                    Algorithm to predict labels in 3 sets of data: The well known
+                                    Iris Dataset, a Car Evaluation Dataset, and a Political Parties dataset.
+                                </p>
+                                <div class="card-footer">
+                                    <!--Code button-->
+                                    <a href="https://github.com/abadias618/Machine-Learning/blob/master/decisionTrees.py"
+                                        class="btn btn-outline-primary">Code</a>
+
+                                    <!-- Button trigger modal -->
+                                    <button type="button" class="btn btn-outline-secondary" data-toggle="modal"
+                                        data-target="#python2">
+                                        Details
+                                    </button>
+
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="python2" tabindex="-1" role="dialog"
+                                        aria-labelledby="python2ModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog modal-xl" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="python2ModalLabel">Decision Trees - ID3 Algorithm</h5>
+                                                    <button type="button" class="close" data-dismiss="modal"
+                                                        aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <p>
+                                                        The ID3 algorithm was implemented first with some pruning,
+                                                        it restricted the levels of the tree by not alowing 
+                                                        repeats in each path. However, for these 3 datasets, allowing
+                                                        repeats and therefore longer paths to each leaf, higher results 
+                                                        were achieved.
+                                                        Recursion (Pre-Order Traversal) was used to visit all leaves 
+                                                        after getting the lowest entropy attribute, to determine the root.
+                                                    </p>
+                                                    <br>
+                                                    <img src="images/id3_1.png">
+                                                    <br>
+                                                    <p>
+                                                        For the 3 datasets (Iris, Car, Voting) some categorization of 
+                                                        numerial data was needed together with some "hot encoding". 
+                                                        For example:
+                                                    </p>
+                                                    <br>
+                                                    <img src="images/id3_3.png">
+                                                    <br>
+                                                    <img src="images/id3_2.png">
+                                                    <br>
+                                                    <p>
+                                                        With 150 records of the Iris Dataset and categorization in 
+                                                        2 groups of all its attributes we still get an acceptable 
+                                                        result for accuracy:
+                                                    </p>
+                                                    <br>
+                                                    <img src="images/id3_4.png">
+                                                    <br>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary"
+                                                        data-dismiss="modal">Close</button>
+                                                    <a href="mailto: abadias618@gmail.com" 
+                                                        class="btn btn-primary">Ask me a question</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--END ID3 CARD-->
+                        <!--CANCER CLASSIFIER CARD-->
+                        <div class="card">
+                            <img class="card-img-top" src="images/nn.jpg">
+                            <div class="card-body">
+                                <h4 class="card-title">Neural Network Binary Classifier</h4>
+                                <p class="card-text">
+                                    The Wisonsin Breast Cancer Data was used to train a Neural Network
+                                    which classifies if tumors are benign or malicious.
+                                </p>
+                                <div class="card-footer">
+                                    <!--Code button-->
+                                    <a href="https://github.com/abadias618/Machine-Learning/blob/master/cancerBinaryClassifierNN.py"
+                                        class="btn btn-outline-primary">Code</a>
+
+                                    <!-- Button trigger modal -->
+                                    <button type="button" class="btn btn-outline-secondary" data-toggle="modal"
+                                        data-target="#python3">
+                                        Details
+                                    </button>
+
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="python3" tabindex="-1" role="dialog"
+                                        aria-labelledby="python2ModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog modal-xl" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="python3ModalLabel">Neural Network Binary Classifier</h5>
+                                                    <button type="button" class="close" data-dismiss="modal"
+                                                        aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <p>
+                                                        Min-Max scaling was needed because of the sparsity of the
+                                                        Wisconsin Breast Cancer Dataset. Tensorflow's Keras were 
+                                                        used to train the model.
+                                                    </p>
+                                                    <br>
+                                                    <img src="images/binaryNN_1.png">
+                                                    <br>
+                                                    <p>
+                                                        Three "Dense" layers of "ReLu" activation functions were used, and a final 
+                                                        level with the "Sigmoid" activation function. With an "rmsprop" optimizer 
+                                                        and a "binary cross entropy" loss function, in 500 epochs 0.96% accuracy 
+                                                        was achieved.
+                                                    </p>
+                                                    <br>
+                                                    <img src="images/binaryNN_2.png">
+                                                    <br>
+                                                    <img src="images/binaryNN_3.png">
+                                                    <br>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary"
+                                                        data-dismiss="modal">Close</button>
+                                                    <a href="mailto: abadias618@gmail.com" 
+                                                        class="btn btn-primary">Ask me a question</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--END CANCER CLASSIFIER CARD-->
+                        
+                    </div>
+                    <div class="row card-row">
+                        <!--REGRESSION MPG CARD-->
+                        <div class="card">
+                            <img class="card-img-top" src="images/nn.jpg">
+                            <div class="card-body">
+                                <h4 class="card-title">Neural Network Regression</h4>
+                                <p class="card-text">
+                                    Automoblie MPG dataset used to train a Neural Network model
+                                    to predict MPG for each car.
+                                </p>
+                                <div class="card-footer">
+                                    <!--Code button-->
+                                    <a href="https://github.com/abadias618/Machine-Learning/blob/master/regressionNeuralNetwork.py"
+                                        class="btn btn-outline-primary">Code</a>
+
+                                    <!-- Button trigger modal -->
+                                    <button type="button" class="btn btn-outline-secondary" data-toggle="modal"
+                                        data-target="#python4">
+                                        Details
+                                    </button>
+
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="python4" tabindex="-1" role="dialog"
+                                        aria-labelledby="python4ModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog modal-xl" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="python4ModalLabel">Neural Network Regression</h5>
+                                                    <button type="button" class="close" data-dismiss="modal"
+                                                        aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <p>
+                                                        Min-Max scaling was needed because of the sparsity of the
+                                                        Dataset. Tensorflow's Keras were used to train the model.
+                                                    </p>
+                                                    <br>
+                                                    <img src="images/regressionNN_1.png">
+                                                    <br>
+                                                    <p>
+                                                        "ReLu" activation functions in 2 Dense layers with a final
+                                                        single output Dense Layer. RMSprop for the optimizer and "mse"
+                                                        for the loss.
+                                                        Something new learned here was EarlyStopping() and a small Class
+                                                        for the callbacks to output "dots" in order to confirm that the training process
+                                                        is ongoing.
+                                                    </p>
+                                                    <br>
+                                                    <img src="images/regressionNN_2.png">
+                                                    <br>
+                                                    <img src="images/regressionNN_3.png">
+                                                    <br>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary"
+                                                        data-dismiss="modal">Close</button>
+                                                    <a href="mailto: abadias618@gmail.com" 
+                                                        class="btn btn-primary">Ask me a question</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--END REGRESSION MPG CARD-->
+                        <!--KNN CARD-->
+                        <div class="card">
+                            <img class="card-img-top" src="images/knn.png">
+                            <div class="card-body">
+                                <h4 class="card-title">K - Nearest Neighbors</h4>
+                                <p class="card-text">
+                                    KNN Regressor and classifier used to make predictions for
+                                    the three datasets.
+                                </p>
+                                <div class="card-footer">
+                                    <!--Code button-->
+                                    <a href="https://github.com/abadias618/Machine-Learning/blob/master/knnExamples.py"
+                                        class="btn btn-outline-primary">Code</a>
+
+                                    <!-- Button trigger modal -->
+                                    <button type="button" class="btn btn-outline-secondary" data-toggle="modal"
+                                        data-target="#python5">
+                                        Details
+                                    </button>
+
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="python5" tabindex="-1" role="dialog"
+                                        aria-labelledby="python5ModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog modal-xl" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="python5ModalLabel">K - Nearest Neighbors</h5>
+                                                    <button type="button" class="close" data-dismiss="modal"
+                                                        aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <p>
+                                                        Min-Max, hot encoding, categorization, etc. of three datasets:
+                                                        Car data, Automoblie MPG data, Student Performance data.
+                                                    </p>
+                                                    <br>
+                                                    <img src="images/KNN_1.png">
+                                                    <br>
+                                                    <br>
+                                                    <img src="images/KNN_2.png">
+                                                    <br>
+                                                    <br>
+                                                    <img src="images/KNN_3.png">
+                                                    <br>
+                                                    <p>
+                                                        Regressor and classifier used to make predictions for
+                                                        the three datasets.
+                                                    </p>
+                                                    <br>
+                                                    <img src="images/KNN_4.png">
+                                                    <br>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary"
+                                                        data-dismiss="modal">Close</button>
+                                                    <a href="mailto: abadias618@gmail.com" 
+                                                        class="btn btn-primary">Ask me a question</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--KNN CARD-->
+                        <!--SCRAPY CARD-->
+                        <div class="card">
+                            <img class="card-img-top" src="images/scrapy.png">
+                            <div class="card-body">
+                                <h4 class="card-title">Web Scraping with Scrapy</h4>
+                                <p class="card-text">
+                                    Scrape quotes from a website using Scrapy
+                                </p>
+                                <div class="card-footer">
+                                    <!-- Button trigger modal -->
+                                    <button type="button" class="btn btn-outline-secondary" data-toggle="modal"
+                                        data-target="#python6">
+                                        Details
+                                    </button>
+
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="python6" tabindex="-1" role="dialog"
+                                        aria-labelledby="python6ModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog modal-xl" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="python6ModalLabel">Web Scraping with Scrapy</h5>
+                                                    <button type="button" class="close" data-dismiss="modal"
+                                                        aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <p>
+                                                        Scrape quotes from a website using Scrapy
+                                                    </p>
+                                                    <br>
+                                                    <img src="images/scrapy_1.png">
+                                                    <br>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary"
+                                                        data-dismiss="modal">Close</button>
+                                                    <a href="mailto: abadias618@gmail.com" 
+                                                        class="btn btn-primary">Ask me a question</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--SCRAPY CARD-->
+                    </div>
+                </div>
+                <hr class="my-4">
+            </div>
+        </div>
+    </div>
+    <!--empty space on the side-->
+    <div id="empty" class="container-fluid col-lg-1 col-md-1 col-sm-0">
+        &nbsp;
+    </div>
+    <!--bottom info-->
+    <footer>
+        <div id="footer" class="container-fluid padding">
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <img src="images/logo.png" height="100px">
+                    <hr class="light">
+                </div>
+                <div class="col-md-4">
+                    <h5>Email:</h5>
+                    <hr class="light">
+                    <p><a href="mailto: abadias@byui.edu">abadias@byui.edu</a></p>
+                    <p><a href="mailto: abadias618@gmail.com.edu">abadias618@gmail.com</a></p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Phone:</h5>
+                    <hr class="light">
+                    <p>+1-385-881-8766</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

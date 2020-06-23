@@ -27,7 +27,7 @@
     <nav class="navbar navbar-expand-md navbar-dark sticky-top">
         <div class="container-fluid">
             <a class="navbar-brand animate__animated animate__fadeInRight" href="#">
-                <img src="logo.png" height="50px">
+                <img src="images/logo.png" height="50px">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
                 <span class="navbar-toggler-icon"></span>
@@ -42,13 +42,14 @@
                             &ltSkills & Projects/&gt
                         </a>
                         <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">Java</a>
-                            <a class="dropdown-item" href="#">Python</a>
-                            <a class="dropdown-item" href="#">C++</a>
-                            <a class="dropdown-item" href="#">Javascript/Node.js</a>
-                            <a class="dropdown-item" href="#">Bootstrap</a>
-                            <a class="dropdown-item" href="#">R</a>
-                            <a class="dropdown-item" href="#">Other</a>
+                            <a class="dropdown-item" href="java.html">Java</a>
+                            <a class="dropdown-item" href="python.html">Python</a>
+                            <a class="dropdown-item" href="cplusplus.html">C++</a>
+                            <a class="dropdown-item" href="javascript.html">Javascript/Node.js</a>
+                            <a class="dropdown-item" href="bootstrap.html">Bootstrap</a>
+                            <a class="dropdown-item" href="r.html">R</a>
+                            <a class="dropdown-item" href="php.html">PHP</a>
+                            <a class="dropdown-item" href="other.html">Other</a>
                         </div>
                     </li>
                     <li class="nav-item animate__animated animate__fadeInUp">
@@ -124,13 +125,13 @@
                     </ul>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img class="img-fluid rounded-circle" src="profile.jpg" alt="me">
+                            <img class="img-fluid rounded-circle" src="images/profile.jpg" alt="me">
                         </div>
                         <div class="carousel-item">
-                            <img class="img-fluid rounded-circle" src="boy.PNG" alt="drawing">
+                            <img class="img-fluid rounded-circle" src="images/boy.PNG" alt="drawing">
                         </div>
                         <div class="carousel-item">
-                            <img class="img-fluid rounded-circle" src="illimani.jpg" alt="Illimani-La Paz">
+                            <img class="img-fluid rounded-circle" src="images/illimani.jpg" alt="Illimani-La Paz">
                         </div>
                     </div>
                     <a class="carousel-control-prev" href="#slides" data-slide="prev">
@@ -226,32 +227,149 @@
         <div class="container-fluid padding">
             <div class="card-deck">
                 <div class="row card-row">
+                    <!--OPENCV CARD-->
                     <div class="card">
-                        <img class="card-img-top" src="cholita.PNG">
+                        <img class="card-img-top" src="images/openCV_2.png">
                         <div class="card-body">
                             <h4 class="card-title">Number of Fingers Recognition</h4>
-                            <p class="card-text">Count the number of fingers you are holding up and
+                            <p class="card-text">
+                                Count the number of fingers you are holding up and
                                 perform basic OS commands based upon that (Python-OpenCV-Numpy...)
                             </p>
                             <div class="card-footer">
-                                <a href="#" class="btn btn-outline-secondary">View</a>
+                                <!--Code button-->
+                                <a href="https://github.com/abadias618/HandCommandRecognition"
+                                    class="btn btn-outline-primary">Code</a>
+
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-outline-secondary" data-toggle="modal"
+                                    data-target="#python1">
+                                    Details
+                                </button>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="python1" tabindex="-1" role="dialog"
+                                    aria-labelledby="python1ModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-xl" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="python1ModalLabel">Number of Fingers
+                                                    Recognition</h5>
+                                                <button type="button" class="close" data-dismiss="modal"
+                                                    aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <p>
+                                                    Through convex hull find number of contours (most extreme region)
+                                                    to calculate the number of fingers of a segmented region (AOI) taken
+                                                    from the total input of the camera
+                                                </p>
+                                                <br>
+                                                <img src="images/openCV_1.png">
+                                                <br>
+                                                <p>
+                                                    Wait about 5 seconds to calibrate, leave the AOI empty,
+                                                    then put your hand inside the AOI
+                                                </p>
+                                                <br>
+                                                <img src="images/openCV_2.png">
+                                                <br>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary"
+                                                    data-dismiss="modal">Close</button>
+                                                <a href="mailto: abadias618@gmail.com" class="btn btn-primary">Ask me a
+                                                    question</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
+                    <!--END OPENCV CARD-->
+                    <!--ID3 CARD-->
                     <div class="card">
-                        <img class="card-img-top" src="Jesus.PNG">
+                        <img class="card-img-top" src="images/decision_trees.png">
                         <div class="card-body">
-                            <h4 class="card-title">Jesus</h4>
-                            <p class="card-text">Count the number of fingers you are holding up and
-                                perform basic OS commands based upon that (Python-OpenCV-Numpy...)
+                            <h4 class="card-title">Decision Trees - ID3 Algorithm</h4>
+                            <p class="card-text">Recursive implementation of the ID3
+                                Algorithm to predict labels in 3 sets of data: The well known
+                                Iris Dataset, a Car Evaluation Dataset, and a Political Parties dataset.
                             </p>
                             <div class="card-footer">
-                                <a href="#" class="btn btn-outline-secondary">View</a>
+                                <!--Code button-->
+                                <a href="https://github.com/abadias618/Machine-Learning/blob/master/decisionTrees.py"
+                                    class="btn btn-outline-primary">Code</a>
+
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-outline-secondary" data-toggle="modal"
+                                    data-target="#python2">
+                                    Details
+                                </button>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="python2" tabindex="-1" role="dialog"
+                                    aria-labelledby="python2ModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-xl" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="python2ModalLabel">Decision Trees - ID3
+                                                    Algorithm</h5>
+                                                <button type="button" class="close" data-dismiss="modal"
+                                                    aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <p>
+                                                    The ID3 algorithm was implemented first with some pruning,
+                                                    it restricted the levels of the tree by not alowing
+                                                    repeats in each path. However, for these 3 datasets, allowing
+                                                    repeats and therefore longer paths to each leaf, higher results
+                                                    were achieved.
+                                                    Recursion (Pre-Order Traversal) was used to visit all leaves
+                                                    after getting the lowest entropy attribute, to determine the root.
+                                                </p>
+                                                <br>
+                                                <img src="images/id3_1.png">
+                                                <br>
+                                                <p>
+                                                    For the 3 datasets (Iris, Car, Voting) some categorization of
+                                                    numerial data was needed together with some "hot encoding".
+                                                    For example:
+                                                </p>
+                                                <br>
+                                                <img src="images/id3_3.png">
+                                                <br>
+                                                <img src="images/id3_2.png">
+                                                <br>
+                                                <p>
+                                                    With 150 records of the Iris Dataset and categorization in
+                                                    2 groups of all its attributes we still get an acceptable
+                                                    result for accuracy:
+                                                </p>
+                                                <br>
+                                                <img src="images/id3_4.png">
+                                                <br>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary"
+                                                    data-dismiss="modal">Close</button>
+                                                <a href="mailto: abadias618@gmail.com" class="btn btn-primary">Ask me a
+                                                    question</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
+                    <!--END ID3 CARD-->
                     <div class="card">
-                        <img class="card-img-top" src="cryingboy.PNG">
+                        <img class="card-img-top" src="images/cryingboy.PNG">
                         <div class="card-body">
                             <h4 class="card-title">Others</h4>
                             <p class="card-text">Count the number of fingers you are holding up and
@@ -265,7 +383,7 @@
                 </div>
                 <div class="row card-row">
                     <div class="card">
-                        <img class="card-img-top" src="cholita.PNG">
+                        <img class="card-img-top" src="images/cholita.PNG">
                         <div class="card-body">
                             <h4 class="card-title">Number of Fingers Recognition</h4>
                             <p class="card-text">Count the number of fingers you are holding up and
@@ -277,7 +395,7 @@
                         </div>
                     </div>
                     <div class="card">
-                        <img class="card-img-top" src="cholita.PNG">
+                        <img class="card-img-top" src="images/cholita.PNG">
                         <div class="card-body">
                             <h4 class="card-title">Number of Fingers Recognition</h4>
                             <p class="card-text">Count the number of fingers you are holding up and
@@ -289,7 +407,7 @@
                         </div>
                     </div>
                     <div class="card">
-                        <img class="card-img-top" src="cholita.PNG">
+                        <img class="card-img-top" src="images/cholita.PNG">
                         <div class="card-body">
                             <h4 class="card-title">Number of Fingers Recognition</h4>
                             <p class="card-text">Count the number of fingers you are holding up and
@@ -308,10 +426,11 @@
         <div class="container-fluid padding">
             <div class="row padding">
                 <div class="col-12">
-                    <img id="gif" src="https://media.giphy.com/media/xT9IgzoKnwFNmISR8I/giphy.gif" width="100%" alt="gif">
+                    <img id="gif" src="https://media.giphy.com/media/xT9IgzoKnwFNmISR8I/giphy.gif" width="100%"
+                        alt="gif">
                     <div class="gif-text lead">
                         Let's keep in touch, send me an email or a message, I'm open to Projects,
-                        Job Opportunities, or just to talk about Tech!
+                        Job Opportunities, or just to talk!
                     </div>
                 </div>
             </div>
@@ -327,7 +446,7 @@
         <div id="footer" class="container-fluid padding">
             <div class="row text-center">
                 <div class="col-md-4">
-                    <img src="logo.png" height="100px">
+                    <img src="images/logo.png" height="100px">
                     <hr class="light">
                 </div>
                 <div class="col-md-4">
