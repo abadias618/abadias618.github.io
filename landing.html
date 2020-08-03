@@ -181,7 +181,7 @@
         <!--Three Column Section-->
         <div class="container-fluid padding">
             <div class="row text-center padding">
-                <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="col-xs-12 col-sm-6 col-md-6">
                     <i class="fas fa-pencil-alt"></i>
                     <h3>Education</h3>
                     <a href="https://www.ldsbc.edu/">LDS Business College</a>
@@ -189,7 +189,7 @@
                     <a href="https://www.byui.edu/">Brigham Young University - Idaho</a>
                     <p>BS Software Engineering</p>
                 </div>
-                <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="col-xs-12 col-sm-6 col-md-6">
                     <i class="fas fa-archway"></i>
                     <h3>Experience</h3>
                     <a
@@ -199,12 +199,18 @@
                     <a href="https://www.ldsbc.edu/bookstore">LDSBC Bookstore</a>
                     <p>Financial Data Processing, Customer Service</p>
                 </div>
-                <div class="col-sm-12 col-md-4">
+            </div>
+            <div class="row text-center padding">
+                <div class="col-sm-12 col-md-12">
                     <i class="fas fa-paint-brush"></i>
                     <h3>Skills</h3>
                     <p>Java, Javascript, Python, C++, R, PHP, Git</p>
                     <br>
-                    <p>Node.js, Maven, Gradle, JUnit, Linux(RHEL), Bootstrap, HTML-CSS-SASS, MSSQL-PostegreSQL</p>
+                    <p>Node.js, Express.js, EJS, Maven, Gradle, JUnit, 
+                        Linux(RHEL), Bootstrap, HTML-CSS-SASS, Shiny, Ggplot, 
+                        NLTK, Numpy, Pandas, Tensorflow, Keras, MSSQL, PostegreSQL, Firebase</p>
+                    <br>
+                    <p>SCRUM, OOP, RESTful Web Services, MVC, Software Engineering Methodologies</p>
                 </div>
             </div>
             <hr class="my-4">
@@ -368,7 +374,7 @@
                         </div>
                     </div>
                     <!--END ID3 CARD-->
-                    <!--BSC CARD-->
+                    <!--QA CARD-->
                     <div class="card">
                         <img class="card-img-top" src="images/bsc_1.png">
                         <div class="card-body">
@@ -424,7 +430,7 @@
                         </div>
                     </div>
                 </div>
-                <!--END BSC CARD-->
+                <!--END QA CARD-->
                 <div class="row card-row">
                     <!--BUDGET CARD-->
                     <div class="card">
@@ -567,29 +573,35 @@
                     <!--END BST CARD-->
                     <!--GAPMINDER CARD-->
                     <div class="card">
-                        <img class="card-img-top" src="images/gapminder_2.png">
+                        <img class="card-img-top" src="images/shiny_3.png">
                         <div class="card-body">
-                            <h4 class="card-title">Gapminder Life Expectancy</h4>
+                            <h4 class="card-title">Text Analysis with NLP</h4>
                             <p class="card-text">
-                                Data Wrangling and Visualization of the Gapminder Library
+                                Shiny App, which analyzes and gives insight of a religious text,
+                                using tokenization, stemming, pos-tagging, and a Wordcloud as the means to
+                                represent it.
                             </p>
                             <div class="card-footer">
                                 <!--Code button-->
-                                <a href="https://github.com/abadias618/BYUI335/blob/master/Case_Study_02/Case_Study_2.Rmd"
-                                    class="btn btn-outline-primary">Code</a>
+                                <a href="https://github.com/abadias618/Data-Wrangling-and-Visualization/tree/master/nlp_religious_text_analysis"
+                                    class="btn btn-outline-primary">Code
+                                </a>
+                                <!--Live-->
+                                <a href="https://www.shinyapps.io/admin/#/application/2600375" class="btn btn-outline-info">
+                                    Live
+                                </a>
                                 <!-- Button trigger modal -->
                                 <button type="button" class="btn btn-outline-secondary" data-toggle="modal"
                                     data-target="#r3">
                                     Details
                                 </button>
-
                                 <!-- Modal -->
                                 <div class="modal fade" id="r3" tabindex="-1" role="dialog"
                                     aria-labelledby="r3ModalLabel" aria-hidden="true">
                                     <div class="modal-dialog modal-xl" role="document">
                                         <div class="modal-content">
                                             <div class="modal-header">
-                                                <h5 class="modal-title" id="r3ModalLabel">Gapminder Life Expectancy</h5>
+                                                <h5 class="modal-title" id="r3ModalLabel">Text Analysis with NLP</h5>
                                                 <button type="button" class="close" data-dismiss="modal"
                                                     aria-label="Close">
                                                     <span aria-hidden="true">&times;</span>
@@ -597,19 +609,22 @@
                                             </div>
                                             <div class="modal-body">
                                                 <p>
-                                                    Life Expectancy in the 5 continents.
+                                                    Create a Wordcloud from a selection of texts and degrees of precision.
                                                 </p>
                                                 <br>
-                                                <img src="images/gapminder_2.png">
+                                                <img src="images/shiny_1.png">
                                                 <br>
                                                 <p>
-                                                    GDP per capita through the years in the 5 continents,
-                                                    with the mean (black) of every continent
+                                                    User is able to control the min an max quantity of words.
                                                 </p>
                                                 <br>
-                                                <img src="images/gapminder_3.png">
+                                                <img src="images/shiny_2.png">
                                                 <br>
-                                                <img src="images/gapminder_1.png">
+                                                <p>
+                                                    Wordcloud based on Pos-tags
+                                                </p>
+                                                <br>
+                                                <img src="images/shiny_3.png">
                                                 <br>
                                             </div>
                                             <div class="modal-footer">
