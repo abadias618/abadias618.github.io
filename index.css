@@ -14,3 +14,65 @@ body {
 a, a:visited, a:hover, a:active {
   color: inherit;
 }
+
+.dotted-margin {
+  border-style: dotted;
+  text-align: center;
+  font-size: x-large;
+  width: 70%;
+  margin: auto;
+  padding: 5rem;
+}
+
+.two-cols {
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 3rem;
+}
+
+.col-item {
+  text-align: center;
+}
+
+.four-cols {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  padding: 1rem;
+}
+
+.typewriter {
+  width: fit-content;
+}
+.typewriter h1 {
+  overflow: hidden;
+  border-right: .4em solid white;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: .15em;
+  animation: 
+    typing 3.5s steps(30, end),
+    blink-caret .5s step-end infinite;
+}
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: white }
+}
+
+.neon-text {
+  color: #fff;
+  text-shadow:
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 21px #fff,
+      0 0 42px #0fa,
+      0 0 82px #0fa,
+      0 0 92px #0fa,
+      0 0 102px #0fa,
+      0 0 151px #0fa;
+}
