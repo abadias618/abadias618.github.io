@@ -1,108 +1,57 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
-/*===============BACKGROUND AND GENERAL TEXT COLOR AND FONT=================*/
-html, body {
+body {
+  background-color: black;
   color: white;
-  font-family: sans-serif,  Poppins;
-  font-weight: 300;
-  background: #100a1c;
-  background-image:
-  radial-gradient(50% 30% ellipse at center top, #201e40 0%, rgba(0,0,0,0) 100%),
-  radial-gradient(60% 50% ellipse at center bottom, #261226 0%, #100a1c 100%);
-  background-attachment: fixed;
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;
-}
-body::-webkit-scrollbar {
-  display: none;
+  font-family: 'Inconsolata', monospace !important;
 }
 
-/*===============GENERAL SECTIONS=================*/
-#main {
-  padding-top: 10rem;
-}
-.jumbotron {
-  padding: 5%;
-  background-color: rgb(0,0,0,0.3);
-  
-}
-.lead, .text {
-  text-align: center;
-  margin: 0;
-}
-#welcome {
-  margin-right: 0;
-  position: sticky;
-  top: 5rem;
-}
-
-/*===============NAV BAR=================*/
 .navbar {
-  background-color: transparent;
-  transition: 0.4s;
-  height: 6rem;
-}
-.nav-link, .navbar-toggler-icon {
-  color: white;
-}
-.nav-link{
-  font-size: 1.1em !important;
+  float: right;
+  display: block;
+  text-align: center;
+  padding: 1rem;
 }
 
-/*===============PROGRESS SCROLL BAR=================*/
-@keyframes bounce {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.2);
-  }
-  10% {
-    transform: scale(1);
-  }
-}
-.progress {
-  overflow: visible;
-  border-radius: 0 !important;
-  position: fixed;
-  width: 12px;
-  height: 100vh;
-  left: 0;
-  top: 0;
-  background: rgba(0,0,0,0.3);
-  padding: 0 2px;
+a, a:visited, a:hover, a:active {
+  color: inherit;
 }
 
-/*===============TYPEWRITER EFFECT AND TEXT=================*/
+.dotted-margin {
+  border-style: dotted;
+  text-align: center;
+  font-size: x-large;
+  width: 70%;
+  margin: auto;
+  padding: 5rem;
+}
+
+.two-cols {
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 3rem;
+}
+
+.col-item {
+  text-align: center;
+}
+
+.four-cols {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  padding: 1rem;
+}
+
+.typewriter {
+  width: fit-content;
+}
 .typewriter h1 {
-  color: #fff;
-  font-family: monospace;
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .15em solid orange; /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: .15em; /* Adjust as needed */
+  overflow: hidden;
+  border-right: .4em solid white;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: .15em;
   animation: 
     typing 3.5s steps(30, end),
     blink-caret .5s step-end infinite;
-}
-@media (max-width: 575px) {
-  .typewriter h1, .typewriter h3 {
-    font-size: medium !important;
-  }
-  #welcome {
-    position: static !important;
-  }
-  i::before, i::after {
-    width: 1rem !important;
-  }
-}
-@media (max-width: 1200px) and (min-width: 575px) {
-  .typewriter h1, .typewriter h3 {
-    font-size: xx-large !important;
-  }
-  #welcome {
-    position: static !important;
-  }
 }
 /* The typing effect */
 @keyframes typing {
@@ -112,133 +61,18 @@ body::-webkit-scrollbar {
 /* The typewriter cursor effect */
 @keyframes blink-caret {
   from, to { border-color: transparent }
-  50% { border-color: orange }
+  50% { border-color: white }
 }
 
-/*===============GIF IMAGE=================*/
-#gif {
-  -webkit-filter: blur(5px);
-  filter: blur(5px);
-  height: 15rem;
-  width: 100%;
+.neon-text {
+  color: #fff;
+  text-shadow:
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 21px #fff,
+      0 0 42px #0fa,
+      0 0 82px #0fa,
+      0 0 92px #0fa,
+      0 0 102px #0fa,
+      0 0 151px #0fa;
 }
-.gif-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-/*===============DIALOG BUBBLES=================*/
-#bubbles {
-  margin: 0 !important;
-  visibility: hidden; /*javascript will change this when the item becomes visible*/
-}
-.speech-bubble {
-	position: relative;
-	background: #E9ECEF;
-  border-radius: .4em;
-  padding: 5px;
-  margin: 15px;
-  width: 95%;
-  color: #172242;
-}
-.speech-bubble:after {
-	content: '';
-	position: absolute;
-	right: 0;
-	top: 50%;
-	width: 0;
-	height: 0;
-	border: 39px solid transparent;
-	border-left-color: #E9ECEF;
-	border-right: 0;
-	border-bottom: 0;
-	margin-top: -19.5px;
-  margin-right: -39px;
-}
-
-/*===============CAROUSEL=================*/
-.img-fluid {
-  width: 100%;
-}
-.carousel {
-  padding-top: 15px;
-}
-#slides {
-  margin: 0 !important;
-}
-/*===============BUTTONS=================*/
-.btn-primary{
-  background-color: #000;
-  border: 2px solid #ffffff;
-}
-.btn-primary:hover{
-  background-color: #424242;
-  border: 2px solid #000;
-}
-
-/*===============SOCIAL MEDIA ICONS=================*/
-#social-col {
-  margin: 0;
-  padding: 0;
-  position: fixed;
-  bottom: 0;
-  right: 1rem;
-  z-index: 10;
-  font-size: 3rem;
-  padding: 0;
-}
-
-/*===============CARD=================*/
-.card-row {
-  padding-top: 2rem;
-}
-.card-title {
-  color: black;
-  font-size: medium;
-}
-.card-body {
-  padding: 1rem;
-  padding-bottom: 50px;
-}
-.card-footer {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-}
-.card-text {
-  color: black;
-  font-size: small;
-}
-.transparent-card {
-  background-color: transparent;
-}
-/*===============MODAL=================*/
-.modal-title {
-  color: #007BFF
-}
-.modal-body {
-  color: #172242;
-  text-align: center;
-}
-.modal-body img {
-  display: block;
-  max-width: 80%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-/*===============FOOTER=================*/
-footer{
-  background-color: black;
-  color: antiquewhite;
-  padding-top: 2rem;
-  z-index: -10;
-}
-
-
-
-
-
