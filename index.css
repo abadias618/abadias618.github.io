@@ -10,6 +10,13 @@ body {
   text-align: center;
   padding: 1rem;
 }
+button {
+  background-color: black;
+  border-style: none;
+  color: white;
+  font-family: 'Inconsolata', monospace !important;
+  font-size: larger;
+}
 
 a, a:visited, a:hover, a:active {
   color: inherit;
